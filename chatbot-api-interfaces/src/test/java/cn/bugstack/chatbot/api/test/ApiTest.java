@@ -29,7 +29,7 @@ public class ApiTest {
 
         HttpGet get = new HttpGet("https://api.zsxq.com/v2/groups/48411118851818/topics?scope=unanswered_questions&count=20");
 
-        get.addHeader("cookie", "知识星球个人cookie信息");
+        get.addHeader("cookie", "**");
         get.addHeader("Content-Type", "application/json;charset=utf8");
 
         CloseableHttpResponse response = httpClient.execute(get);
@@ -46,12 +46,12 @@ public class ApiTest {
         CloseableHttpClient httpClient = HttpClientBuilder.create().build();
 
         HttpPost post = new HttpPost("https://api.zsxq.com/v2/topics/412884248251548/answer");
-        post.addHeader("cookie", "知识星球个人cookie信息");
+        post.addHeader("cookie", "**");
         post.addHeader("Content-Type", "application/json;charset=utf8");
 
         String paramJson = "{\n" +
                 "  \"req_data\": {\n" +
-                "    \"text\": \"自己去百度！\\n\",\n" +
+                "    \"text\": \"886！\\n\",\n" +
                 "    \"image_ids\": [],\n" +
                 "    \"silenced\": false\n" +
                 "  }\n" +
